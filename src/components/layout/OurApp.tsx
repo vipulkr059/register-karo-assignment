@@ -1,5 +1,4 @@
 import { FaApple, FaGooglePlay } from "react-icons/fa";
-import phone from "../../assets/app/Phone (1).png";
 
 const OurApp = () => {
   return (

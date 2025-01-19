@@ -1,9 +1,4 @@
-import {
-  Handshake,
-  LayoutGrid,
-  PlayCircleIcon,
-  UsersRound,
-} from "lucide-react";
+import { Handshake, LayoutGrid, UsersRound } from "lucide-react";
 import hero from "../../assets/hero/hero.png";
 import { StarRating } from "../common/StarRating";
 import { FaCirclePlay } from "react-icons/fa6";

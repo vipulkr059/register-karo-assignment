@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { ChevronDown } from "lucide-react";
 import logo1 from "../../assets/clients/Logo.png";
 import logo2 from "../../assets/clients/Logo (1).png";
