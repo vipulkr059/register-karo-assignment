@@ -90,33 +90,33 @@ export const features = [
     icon: symbol1,
     title: "Confidential & Safe",
     description: "All your private information is safe with us",
-    className: "bg-red-50",
+    className: "bg-red-100",
   },
   {
     icon: symbol2,
     title: "No Hidden Fee",
     description:
       "Everything is put before you with no hidden charges or conditions",
-    className: "bg-green-50",
+    className: "bg-green-100",
   },
   {
     icon: symbol3,
     title: "Guaranteed Satisfaction",
     description:
       "We ensure that you stay 100% satisfied with our offered services",
-    className: "bg-blue-50",
+    className: "bg-blue-100",
   },
   {
     icon: symbol4,
     title: "Expert CA/CS Assistance",
     description: "Prompt support from our in-house expert professionals",
-    className: "bg-red-50",
+    className: "bg-purple-100",
   },
   {
     icon: symbol1,
     title: "Expert CA/CS Assistance",
     description: "Prompt support from our in-house expert professionals",
-    className: "bg-red-50",
+    className: "bg-red-100",
   },
 ];
 
@@ -297,4 +297,13 @@ export const testimonials: Testimonial[] = [
     rating: 4.5,
     image: "/placeholder.svg?height=64&width=64",
   },
+];
+
+export const section13Data = [
+  { title: "1M+", description: "Customers" },
+  { title: "12+", description: "Years of Excellence" },
+  { title: "41+", description: "R&D Engineers" },
+  { title: "78+", description: "Countries" },
+  { title: "32874+", description: "Partners" },
+  { title: "41+", description: "Awards Recieved" },
 ];

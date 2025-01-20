@@ -26,6 +26,7 @@ export default function Navbar() {
               <Phone className="w-4 h-4" />
               <a href="tel:+918447746183">+918447746183</a>
             </div>
+            <div className="w-[2px] h-4 bg-[linear-gradient(0deg,_rgba(0,_0,_0,_0)_0%,_#D0D0D0_50%,_rgba(0,_0,_0,_0)_100%)]"></div>
           </div>
           <div className="flex gap-4">
             <a href="#" className="hover:text-gray-200">

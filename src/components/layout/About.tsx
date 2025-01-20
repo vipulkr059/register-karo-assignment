@@ -4,7 +4,7 @@ import { ArrowRightCircle } from "lucide-react";
 
 const About: React.FC = () => {
   return (
-    <div className="bg-gray-50 py-12 px-6 md:px-12 lg:px-16">
+    <div className="bg-gray-50 py-10 px-6 md:px-12 lg:px-16">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         {/* Text Section */}
         <div>

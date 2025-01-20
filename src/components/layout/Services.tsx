@@ -3,7 +3,7 @@ import { services } from "@/data";
 
 export default function Services() {
   return (
-    <section className="py-16 bg-[#FAFAFA]">
+    <section className="lg:py-16 py-8 bg-[#FAFAFA]">
       <div className="container mx-auto px-4">
         <div className="text-center space-y-4 mb-12">
           <p className="text-orange-400 font-medium">

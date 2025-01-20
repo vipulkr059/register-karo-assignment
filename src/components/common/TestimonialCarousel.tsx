@@ -34,9 +34,9 @@ export function TestimonialCarousel() {
               </CarouselItem>
             ))}
           </CarouselContent>
-          <div className="absolute right-16 -top-16 flex gap-2">
-            <CarouselPrevious className="h-10 w-10 rounded-full bg-yellow-500" />
-            <CarouselNext className="h-10 w-10 rounded-full bg-yellow-500" />
+          <div className="absolute right-16 lg:-top-16 -top-20  flex ;g:gap-2 gap-1">
+            <CarouselPrevious className="lg:h-10 lg:w-10 h-7 w-7 rounded-full bg-yellow-500" />
+            <CarouselNext className="lg:h-10 lg:w-10 h-7 w-7 rounded-full bg-yellow-500" />
           </div>
         </Carousel>
       </div>

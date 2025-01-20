@@ -34,7 +34,7 @@ export function Faq() {
             >
               <AccordionTrigger className="flex items-center gap-4 text-left">
                 <div className="absolute -left-0 top-0 h-full w-1 rounded-l-lg bg-[linear-gradient(127.81deg,_#FFA229_10%,_#1C4670_58%)]" />
-                <span className="pr-8 text-base font-medium text-gray-900">
+                <span className="pr-8 text-base font-medium text-gray-900 no-underline">
                   {item.question}
                 </span>
               </AccordionTrigger>

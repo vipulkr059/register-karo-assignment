@@ -6,24 +6,30 @@ import { FaCirclePlay } from "react-icons/fa6";
 export default function Hero() {
   const data = [
     {
-      icon: <LayoutGrid className="w-10 h-10 text-gray-600" />,
+      icon: (
+        <LayoutGrid className="lg:w-10 lg:h-10 w-6 h-6 text-gray-600 object-contain" />
+      ),
       title: "4.5+",
       description: "Customer Rating",
     },
     {
-      icon: <UsersRound className="w-10 h-10 text-gray-600" />,
+      icon: (
+        <UsersRound className="lg:w-10 lg:h-10 w-6 h-6 text-gray-600 object-contain" />
+      ),
       title: "20,000+",
       description: "Clients",
     },
     {
-      icon: <Handshake className="w-10 h-10 text-gray-600" />,
+      icon: (
+        <Handshake className="lg:w-10 lg:h-10 w-6 h-6 text-gray-600 object-contain" />
+      ),
       title: "99.8%",
       description: "Financial Stability",
     },
   ];
   return (
-    <div className="w-full px-16 py-12 bg-gradient-to-r from-white via-[#fff0d5] to-[#edf6ff] bg-opacity-70">
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+    <div className="px-8 lg:px-16 py-12 bg-gradient-to-r from-white via-[#fff0d5] to-[#edf6ff] bg-opacity-70">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 lg:gap-12 md:gap-6 gap-4 items-center">
         <div className="space-y-8">
           {/* Google Rating */}
           <div className="flex items-center gap-2">
@@ -50,16 +56,19 @@ export default function Hero() {
           </div>
           <div className="bg-red-600 w-10 h-[1px]"></div>
           {/* Statistics */}
-          <div className="grid grid-cols-3 gap-8">
+          <div className="grid grid-cols-3 lg:gap-8 gap-4">
             {data.map((item, idx) => {
               return (
-                <div className="flex items-center gap-2" key={idx}>
-                  {item.icon}
+                <div
+                  className="flex flex-col lg:flex-row  items-center gap-2"
+                  key={idx}
+                >
+                  <div>{item.icon}</div>
                   <div>
-                    <div className="text-2xl font-bold text-transparent bg-[linear-gradient(157.81deg,_#FFA229_10%,_#1C4670_68%)] bg-clip-text">
+                    <div className="lg:text-2xl lg:text-left text-center text-xl font-bold text-transparent bg-[linear-gradient(157.81deg,_#FFA229_10%,_#1C4670_68%)] bg-clip-text">
                       {item.title}
                     </div>
-                    <div className="text-sm text-gray-600">
+                    <div className="text-sm lg:text-left text-center text-gray-600">
                       {item.description}
                     </div>
                   </div>
@@ -70,7 +79,7 @@ export default function Hero() {
 
           {/* CTAs */}
           <div className="flex gap-4">
-            <button className="bg-[#1C4670] font-semibold text-white px-10 py-4 rounded-md hover:bg-blue-900">
+            <button className="bg-[#1C4670] font-semibold text-white lg:px-10 lg:py-4 px-4 py-2 rounded-md hover:bg-blue-900 ">
               Talk An Expert
             </button>
             <button className="px-6 py-3 md:px-3 font-semibold rounded-md  flex items-center gap-2">
@@ -87,25 +96,21 @@ export default function Hero() {
             className="w-full h-auto"
           />
         </div>
-      </div>
-
-      {/* Side Navigation */}
-      {/* <div className="fixed right-0 top-1/2 transform -translate-y-1/2 bg-white shadow-lg rounded-l-lg">
-        <div className="py-4 px-6 space-y-4">
-          <button className="whitespace-nowrap text-sm hover:text-blue-600">
+        <aside className="hidden  absolute right-0 top-1/4 lg:flex flex-col space-y-4">
+          <button className="bg-white px-6 py-4  shadow-lg hover:bg-gray-200 rounded-l-lg">
             Annual Compliance
           </button>
-          <button className="whitespace-nowrap text-sm hover:text-blue-600">
+          <button className="bg-white px-6 py-4  shadow-lg hover:bg-gray-200 rounded-l-lg">
             Payroll Services
           </button>
-          <button className="whitespace-nowrap text-sm hover:text-blue-600">
+          <button className="bg-white px-6 py-4  shadow-lg hover:bg-gray-200 rounded-l-lg">
             Company Formation
           </button>
-          <button className="whitespace-nowrap text-sm hover:text-blue-600">
-            Annual Compliance
+          <button className="bg-white px-6 py-4  shadow-lg hover:bg-gray-200 rounded-l-lg">
+            Annual Compliance{" "}
           </button>
-        </div>
-      </div> */}
+        </aside>
+      </div>
     </div>
   );
 }

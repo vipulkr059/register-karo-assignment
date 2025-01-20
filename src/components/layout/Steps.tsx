@@ -21,7 +21,7 @@ export default function Steps() {
     { icon: <Mail />, title: "Get Confirm Mail", color: "bg-[#828282]" },
   ];
   return (
-    <div className="grid grid-cols-1 gap-4 bg-[#FFA229] px-16 py-10 overflow-x-scroll sm:grid-cols-4 md:overflow-x-hidden no-scrollbar">
+    <div className="flex justify-normal lg:justify-center items-center lg:gap-12 gap-6 flex-nowrap overflow-x-scroll no-scrollbar p-10 bg-[#FFA229]">
       {steps.map((step) => (
         <div
           className="flex-shrink-0 flex items-center justify-center gap-2"
@@ -29,7 +29,7 @@ export default function Steps() {
         >
           <div
             className={clsx(
-              "text-white w-16 h-16 rounded-full shadow-sm hover:shadow-md transition-shadow duration-300 flex items-center justify-center p-3",
+              "text-white w-16 h-16 rounded-full shadow-md hover:shadow-lg transition-shadow duration-300 flex items-center justify-center p-3",
               `${step.color}`
             )}
           >

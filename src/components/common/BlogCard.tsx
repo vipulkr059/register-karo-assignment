@@ -13,15 +13,15 @@ export interface BlogPost {
 export function BlogCard({ post }: { post: BlogPost }) {
   const tagColors = ["red", "blue", "green", "yellow", "purple", "orange"];
   return (
-    <div className="group flex flex-col space-y-4">
-      <div className="relative aspect-[4/3] overflow-hidden rounded-lg">
+    <div className="group flex flex-col space-y-4 shadow-md pb-3 rounded-lg">
+      <div className="relative aspect-[4/2.5] overflow-hidden rounded-t-lg">
         <img
           src={post.image || "/placeholder.svg"}
           alt={post.title}
           className="object-cover w-full transition-transform duration-300 group-hover:scale-105"
         />
       </div>
-      <div className="flex flex-col space-y-2">
+      <div className="flex flex-col space-y-2 px-3">
         <div className="flex items-center space-x-2 text-md text-gray-500 font-medium">
           <span>{post.author}</span>
           <span>•</span>

@@ -4,7 +4,7 @@ import { ArrowRight } from "lucide-react";
 
 export default function BlogListing() {
   return (
-    <div className="container max-w-7xl mx-auto px-16 py-12">
+    <div className="container max-w-7xl mx-auto lg:px-16 px-8 py-12">
       <div className="mb-12 text-center">
         <div className="text-sm  uppercase tracking-wider text-[#EB8D15]">
           EXPLORE OUR BLOGS
